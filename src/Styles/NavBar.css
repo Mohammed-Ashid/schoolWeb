@@ -1,0 +1,46 @@
+.navbar-main{
+    width:100%;
+    background-color: white;
+    height:60px;
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+}
+.logo-div{
+    background-color: grey;
+    width:10%;
+    height: 100%;
+}
+.list-div{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+.list-div ul{
+    list-style-type: none;
+    display: flex;
+    gap:45px;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.list-div ul li{
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+}
+.list-div ul li:hover{
+    transform: scale(1.1);
+    color: blue;
+}
+.list-div ul li button{
+    background-color: rgb(85, 85, 235);
+    height:30px;
+    color:white;
+    border-radius: 8px;
+    box-shadow: 5px 5px 5px lightgrey;
+    
+}
+.list-div ul li button:hover{
+    background-color: green;
+    
+}

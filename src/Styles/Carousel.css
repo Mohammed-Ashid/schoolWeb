@@ -1,0 +1,66 @@
+.carousel-main-div {
+    height: 500px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Ensures smooth slide */
+    opacity: .8;
+  }
+  
+  .carousel-text {
+    position: relative;
+    width: 100%;
+    /* background-color: green; */
+    height: 70px;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    font-size: 4.5em;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .carousel-text p {
+    position: absolute;
+    width: 100%;
+    margin: 0;
+    top: 0;
+    left: 0;
+  }
+  
+  .slide-in {
+    animation: slideInFromRight 0.8s ease forwards;
+  }
+  
+  .slide-out {
+    animation: slideOutToLeft 0.8s ease forwards;
+  }
+  
+  @keyframes slideInFromRight {
+    from {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideOutToLeft {
+    from {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+  }
+  
