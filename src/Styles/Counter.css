@@ -1,0 +1,81 @@
+.counter-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    flex-wrap: wrap;
+    gap: 20px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .counter-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .counter-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  
+  .counter-item:hover .counter-logo {
+    transform: scale(1.2);
+  }
+  
+  .counter-text h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .counter-text p {
+    font-size: 1rem;
+    color: #777;
+    margin-top: 10px;
+  }
+  .count-icon{
+    font-size: 50px;
+    color:#004d99;
+  }
+  
+  @media (max-width: 768px) {
+    .counter-section {
+    display: flex;
+      align-items: center;
+    }
+    .counter-item {
+     
+        padding: 10px;
+        width: 150px;
+     gap:5px;
+      }
+      .count-icon{
+        font-size: 30px;
+        
+      }
+      .counter-text h2 {
+        font-size:1.5rem;
+        
+      }
+    .counter-item {
+      width: 25%;
+    }
+    .counter-text p {
+        font-size: .8rem;
+        color: #777;
+        margin-top: 7px;
+      }
+  }
+  

@@ -1,0 +1,105 @@
+.alumni-section {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 20px 0;
+    overflow: hidden; /* Ensures seamless scrolling */
+  }
+  
+  .alumni-slider .slick-slide {
+    padding: 10px;
+  }
+  
+  .alumni-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 300px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .alumni-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .alumni-card .MuiAvatar-root {
+    flex-shrink: 0;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+  }
+  
+  .alumni-card .MuiTypography-h6 {
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .alumni-card .MuiTypography-body2 {
+    margin-top: 10px;
+    color: #555;
+    text-align: center;
+  }
+  
+  .slick-track {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 1024px) {
+    .alumni-card {
+      max-width: 250px;
+      padding: 15px;
+    }
+  
+    .alumni-card .MuiAvatar-root {
+      width: 70px;
+      height: 70px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .alumni-card {
+      max-width: 200px;
+      padding: 5px;
+      
+    }
+  
+    .alumni-card .MuiTypography-h6 {
+      font-size: 12px;
+    }
+  
+    .alumni-card .MuiTypography-body2 {
+      font-size: 10px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .alumni-section {
+      padding: 15px;
+    }
+  
+    .alumni-card {
+      max-width: 180px;
+      padding: 8px;
+    }
+  
+    .alumni-card .MuiAvatar-root {
+      width: 60px;
+      height: 60px;
+    }
+  
+    .alumni-card .MuiTypography-h6 {
+      font-size: 14px;
+    }
+  
+    .alumni-card .MuiTypography-body2 {
+      font-size: 12px;
+    }
+  }
+  
