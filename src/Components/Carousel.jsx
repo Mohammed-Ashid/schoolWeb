@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react';
 import '../Styles/Carousel.css';
 
 const images = [
-  'public/Images/MES_AIMAT_college_marampally.jpg',
-  'public/Images/gallery-4.webp',
-  'public/Images/mes-advanced-institute-of-management-and-technology-marampally-ernakulam-mba-colleges-8382xlhqms.avif',
+  'Images/MES_AIMAT_college_marampally.jpg',
+  'Images/gallery-4.webp',
+  'Images/mes-advanced-institute-of-management-and-technology-marampally-ernakulam-mba-colleges-8382xlhqms.avif',
 ];
 
 const texts = [

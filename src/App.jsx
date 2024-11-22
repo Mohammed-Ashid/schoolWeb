@@ -18,8 +18,11 @@ function App() {
     <Ccarousel/>
     <div className='information'>
     <Announcements/>
+    
     <LatestNews/>
     <LatestEvents/>
+    
+
     </div>
     </>
   )
