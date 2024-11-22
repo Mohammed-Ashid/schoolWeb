@@ -1,8 +1,7 @@
 .announcements-main-div {
     width: 20%;
     overflow: hidden;
-    /* border: 1px solid #0d173b;
-    border-radius: 5px; */
+
     
 }
 
@@ -47,3 +46,20 @@
         transform: translateY(-100%);
     }
 }
+@media (min-width: 768px) {
+    .announ-heading {
+        width: 100%;
+        background-color: #4ab7e0;
+        color: #0d173b;
+       font-size: 10px;
+        /* font-weight: bold; */
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+}
+

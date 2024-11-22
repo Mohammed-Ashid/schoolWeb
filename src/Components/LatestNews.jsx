@@ -15,6 +15,10 @@ function LatestNews() {
   return (
     <div className='latest-main-div'>
       <div className='latest-title'>LATEST NEWS</div>
+      <div className='main-news'>
+        <div className='main-news-image'></div>
+        <div className='main-news-summary'><h3>Todays</h3><p>Dummy details</p></div>
+      </div>
       <div className='latest-content'>
         {newsItems.map((item, index) => (
           <div key={index} className='news-item'>

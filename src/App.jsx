@@ -16,7 +16,7 @@ function App() {
     <>
      <NavBar/>
     <Ccarousel/>
-    <div style={{display:'flex',gap:'10px',marginTop:'10px'}}>
+    <div className='information'>
     <Announcements/>
     <LatestNews/>
     <LatestEvents/>

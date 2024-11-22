@@ -1,46 +1,123 @@
-.navbar-main{
-    width:100%;
+/* Main navbar container */
+.navbar-main {
+    width: 97.5%;
     background-color: white;
-    height:60px;
+    height: 60px;
     border-bottom: 1px solid lightgrey;
     display: flex;
-}
-.logo-div{
-    background-color: grey;
-    width:10%;
-    height: 100%;
-}
-.list-div{
-    width: 100%;
-    display: flex;
-    justify-content: right;
-    padding-right: 10px;
-    padding-top: 10px;
-}
-.list-div ul{
-    list-style-type: none;
-    display: flex;
-    gap:45px;
     align-items: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    justify-content: space-between;
+    padding: 0 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-.list-div ul li{
-    transition: all .5s ease-in-out;
+
+/* Logo container */
+.logo-div {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Hamburger menu icon */
+.hamburger {
+    display: none;
+    font-size: 24px;
     cursor: pointer;
+    color: #333;
 }
-.list-div ul li:hover{
-    transform: scale(1.1);
-    color: blue;
+
+/* Navigation list container */
+.list-div {
+    display: flex;
+    align-items: center;
 }
-.list-div ul li button{
-    background-color: rgb(85, 85, 235);
-    height:30px;
-    color:white;
+
+.list-div ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.list-div ul li {
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.list-div ul li:hover {
+    color: #007bff;
+    transform: translateX(5px);
+}
+
+/* Admission button styling */
+.list-div ul li button {
+    background-color: #5555eb;
+    color: white;
+    border: none;
+    height: 35px;
+    padding: 0 15px;
     border-radius: 8px;
-    box-shadow: 5px 5px 5px lightgrey;
-    
+    box-shadow: 2px 2px 5px lightgrey;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s ease;
 }
-.list-div ul li button:hover{
-    background-color: green;
-    
+
+.list-div ul li button:hover {
+    background-color: #28a745;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar-main{width:92%;}
+    .hamburger {
+        display: block;
+    }
+
+    .list-div {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: white;
+        width: 100%;
+        max-width: 300px;
+        height: 0;
+        overflow: hidden;
+        transition: height 0.3s ease;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .list-div.open {
+        height: auto;
+        padding: 20px 10px;
+    }
+
+    .list-div ul {
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+    }
+
+    .list-div ul li {
+        font-size: 18px;
+    }
+
+    .list-div ul li button {
+        width: 100%;
+        text-align: left;
+        padding: 10px;
+        font-size: 16px;
+    }
 }
