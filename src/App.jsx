@@ -11,7 +11,7 @@ import About from './Components/About'
 import Alumni from './Components/Alumni'
 import Companies from './Components/Companies '
 import Counter from './Components/Counter'
-
+import Footer from './Components/Footer'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -28,6 +28,7 @@ function App() {
     <Alumni/>
     <Companies/>
     <Counter/>
+    <Footer/>
     </>
   )
 }
