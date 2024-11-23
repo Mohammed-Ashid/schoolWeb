@@ -21,7 +21,8 @@ function Companies() {
     autoplay: true,
     autoplaySpeed: 0, // Seamless scrolling
     cssEase: "linear",
-    rtl: true, // Reverse direction (left to right)
+    rtl: true,
+    arrows:false, // Reverse direction (left to right)
   };
 
   return (

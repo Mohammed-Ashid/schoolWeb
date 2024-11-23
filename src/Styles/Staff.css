@@ -1,0 +1,176 @@
+/* Staff container styles */
+.staff-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  /* Special Section Styles (for MD, Principal, Owner) */
+  .special-sections {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(550px, 1fr));
+    gap:20px;
+    margin-bottom: 30px;
+  }
+  
+  .special-section {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 20px;
+    padding-bottom: 0px;
+    text-align: center;
+  }
+  
+  .special-section:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .special-section-img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    /* border-radius: 50%; */
+  }
+  
+  .special-section-info {
+    margin-top: 15px;
+  }
+  
+  .special-section-name {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .special-section-title {
+    font-size: 1rem;
+    color: #777;
+  }
+  
+  .special-section-about {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 10px;
+  }
+  
+  /* Search Bar Styles */
+  .search-bar {
+    margin: 20px 0;
+  }
+  
+  .search-bar input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  /* Staff grid layout */
+  .staff-heading {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .staff-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+  }
+  
+  /* Staff card styles */
+  .staff-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .staff-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Staff image styles */
+  .staff-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 2px solid #f4f4f4;
+  }
+  
+  /* Staff information section */
+  .staff-info {
+    padding: 20px;
+  }
+  
+  .staff-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .staff-department {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .staff-contact {
+    font-size: 1rem;
+    color: #007BFF;
+    cursor: pointer;
+    transition: color 0.2s ease;
+  }
+  
+  .staff-contact:hover {
+    color: #0056b3;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .special-sections {
+        grid-template-columns: 1fr; /* Single column for mobile screens */
+      
+      gap: 20px;
+    }
+  
+  
+  
+    .staff-heading {
+      font-size: 2rem;
+    }
+  
+    .staff-grid {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      padding: 0 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .staff-heading {
+      font-size: 1.8rem;
+    }
+  
+    .special-section-img {
+      height: 120px;
+    }
+  
+    .staff-image {
+      height: 150px;
+    }
+  }
+  

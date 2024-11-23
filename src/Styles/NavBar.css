@@ -38,7 +38,7 @@
 .list-div ul {
     list-style: none;
     display: flex;
-    gap: 30px;
+    gap: 40px;
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -49,16 +49,22 @@
     cursor: pointer;
     font-size: 16px;
     font-weight: 500;
-    color: #333;
+    color: #333333;
     display: flex;
     align-items: center;
     gap: 10px;
+    
+}
+.list-div ul li a{
+    text-decoration: none;
+    color: inherit;
 }
 
 .list-div ul li:hover {
     color: #007bff;
     transform: translateX(5px);
 }
+
 
 /* Admission button styling */
 .list-div ul li button {

@@ -1,36 +1,20 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import NavBar from './Components/NavBar'
-import Ccarousel from './Components/Carousel'
-import Announcements from './Components/Announcements'
-import LatestNews from './Components/LatestNews'
-import LatestEvents from './Components/LatestEvents'
-import About from './Components/About'
-import Alumni from './Components/Alumni'
-import Companies from './Components/Companies '
-import Counter from './Components/Counter'
-import Footer from './Components/Footer'
-function App() {
-  const [count, setCount] = useState(0)
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navigator from './Components/Navigator';
+import Gallery from './Components/Gallery';
+import Staff from "./Components/Staff";
+import './App.css';
 
+function App() {
   return (
-    <>
-     <NavBar/>
-    <Ccarousel/>
-    <div className='information'>
-    <Announcements/>
-    <LatestNews/>
-    <LatestEvents/>
-    </div>
-    <About/>
-    <Alumni/>
-    <Companies/>
-    <Counter/>
-    <Footer/>
-    </>
-  )
+    <Router>
+      <Routes>
+        <Route path="/schoolWeb/" element={<Navigator />} />
+        <Route path="/schoolWeb/gallery" element={<Gallery />} />
+        <Route path="/schoolWeb/staff" element={<Staff />} />
+      </Routes>
+    </Router>
+  
+  );
 }
 
-export default App
+export default App;

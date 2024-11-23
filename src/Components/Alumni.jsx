@@ -34,6 +34,7 @@ function Alumni() {
     autoplay: true,
     autoplaySpeed: 0, // Seamless scrolling
     cssEase: "linear",
+    arrows:false,
   };
 
   return (
