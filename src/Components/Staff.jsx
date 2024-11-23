@@ -9,28 +9,28 @@ const staffData = [
     name: 'John Doe',
     department: 'Math',
     contact: 'john.doe@school.com',
-    image: 'https://via.placeholder.com/150?text=Teacher1',
+    image: 'Images/teacher1.jpeg',
   },
   {
     id: 2,
     name: 'Jane Smith',
     department: 'Science',
     contact: 'jane.smith@school.com',
-    image: 'https://via.placeholder.com/150?text=Teacher2',
+    image: 'Images/teacher2.jpeg',
   },
   {
     id: 3,
     name: 'Mike Johnson',
     department: 'History',
     contact: 'mike.johnson@school.com',
-    image: 'https://via.placeholder.com/150?text=Teacher3',
+    image: 'Images/teacher3.jpeg',
   },
   {
     id: 4,
     name: 'Sara Williams',
     department: 'English',
     contact: 'sara.williams@school.com',
-    image: 'https://via.placeholder.com/150?text=Teacher4',
+    image: 'Images/teacher4.jpeg',
   },
   // More staff members...
 ];
@@ -41,21 +41,21 @@ const specialSections = [
     name: 'John Doe',
     title: 'Principal',
     about: 'John is the principal of the school with over 20 years of experience.',
-    image: 'https://via.placeholder.com/150?text=Principal',
+    image: 'Images/principal.jpeg',
   },
   {
     id: 2,
     name: 'Jane Smith ',
     title: 'Managing Director',
     about: 'Jane leads the administration and strategic direction of the school.',
-    image: 'https://via.placeholder.com/150?text=MD',
+    image: 'Images/md.jpeg',
   },
   {
     id: 3,
     name: 'Mike Johnson ',
     title: 'Owner',
     about: 'Mike is the owner of the school and has been an active supporter of education.',
-    image: 'https://via.placeholder.com/150?text=Owner',
+    image: 'Images/owner.jpeg',
   },
 ];
 
