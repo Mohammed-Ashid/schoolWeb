@@ -19,7 +19,7 @@ function NavBar() {
     }
   };
   const handleNavigationAndScroll = (id) => {
-    navigate("/schoolWeb/"); // Navigate to the `/` route
+    navigate("/"); // Navigate to the `/` route
     setTimeout(() => {
       const section = document.getElementById(id);
       if (section) {

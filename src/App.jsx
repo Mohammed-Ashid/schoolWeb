@@ -6,14 +6,13 @@ import './App.css';
 
 function App() {
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router basename="/schoolWeb">
       <Routes>
-        <Route path="/schoolWeb/" element={<Navigator />} />
-        <Route path="/schoolWeb/gallery" element={<Gallery />} />
-        <Route path="/schoolWeb/staff" element={<Staff />} />
+        <Route path="/" element={<Navigator />} />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/staff" element={<Staff />} />
       </Routes>
     </Router>
-  
   );
 }
 
